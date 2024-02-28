@@ -13,7 +13,7 @@ def manage_client(server_socket):
                 
         print(f"File from user: {file_data}")
 
-        with open('./receivedData/name.txt', 'w') as file:
+        with open('./receivedData/data.txt', 'w') as file:
             file.write(file_data)
     except socket.error as msg:
         print(f"Caught exception socket.error in Client socket : {msg}")
